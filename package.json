@@ -1,0 +1,27 @@
+{
+  "name": "vue-consoles",
+  "version": "0.0.1",
+  "description": "console log system for Vue Based on Window.console",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khs9339/vue-consoles.git"
+  },
+  "keywords": [
+    "vue",
+    "console",
+    "log",
+    "debug",
+    "error",
+    "console.log"
+  ],
+  "author": "HyoSung <khs9339@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/khs9339/vue-consoles/issues"
+  },
+  "homepage": "https://github.com/khs9339/vue-consoles#readme"
+}
