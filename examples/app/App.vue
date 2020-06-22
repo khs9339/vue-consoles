@@ -8,11 +8,13 @@
 export default {
   data() {
     return {
-      message: 'Hello World',
+      message:'Please Check out the developer tool console.'
     };
   },
   created() {
-    console.log('APP.VUE')
+    this.$log('TEST VUE-CONSOLES LOG', 'LOG')
+    this.$warn('TEST VUE-CONSOLES LOG', 'WARN')
+    this.$error('TEST VUE-CONSOLES LOG', 'ERROR')
   }
 };
 </script>
