@@ -3,7 +3,8 @@
 
 ## Install 
 ```shell
-npm i -s vue-consoles
+npm i -s vue-consoles 
+yarn add vue-consoles 
 ```
 
 ## Usage
@@ -21,11 +22,10 @@ Vue.use(VueConsoles, options);
 // example.vue
 export default {
   created() {
-    this.$log('Console log Test', 'Created'); 
-  },
-  mounted() {
-    this.$log('Console log Test', 'Mounted'); 
-  },
+    this.$log('TEST VUE-CONSOLES LOG', 'LOG')
+    this.$warn('TEST VUE-CONSOLES LOG', 'WARN')
+    this.$error('TEST VUE-CONSOLES LOG', 'ERROR')
+  }
 };
 ```
 ## Options
