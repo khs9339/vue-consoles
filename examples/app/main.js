@@ -2,7 +2,6 @@ import Vue from 'vue';
 import App from './App.vue';
 import plugin from 'vue-plugin'
 
-console.log('Plugin::', plugin)
 Vue.use(plugin, {
   currentEnv: 'local',
   prefix: ['VUE-CONSOLES', '_ENV_'],
