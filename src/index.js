@@ -1,5 +1,15 @@
+const defaultOpt = {
+  currentEnv: 'local',
+  prefix: ['_ENV_'],
+  console: ['log', 'info', 'debug', 'warn', 'error'],
+  buildEnv: {
+    local: true,
+  },
+};
+
 export default {
-  install (Vue, opt) {
+  install(Vue, options) {
+    const opt = Object.assign(defaultOpt, options)
     try {
       if (!console) throw new Error('Not Found Window Console');
       if (!opt.buildEnv[opt.currentEnv]) throw new Error('This Environment is not available');
@@ -15,7 +25,6 @@ export default {
         })
       })
     } catch (err) {
-      console.log('err', err)
       opt.console.forEach(key => {
         Vue.prototype[`$${key}`] = (msg = '') => {};
       })

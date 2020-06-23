@@ -34,18 +34,20 @@ Vue.use(VueConsoles, {
 export default {
   created() {
     this.$log('TEST VUE-CONSOLES LOG', 'LOG')
+    this.$info('TEST VUE-CONSOLES LOG', 'INFO')
     this.$warn('TEST VUE-CONSOLES LOG', 'WARN')
     this.$error('TEST VUE-CONSOLES LOG', 'ERROR')
+    this.$debug('TEST VUE-CONSOLES LOG', 'DEBUG')
   }
 };
 ```
 ## Options
-| Key | Value | Type | Description |
-| --- |:---:|:---:|---|
-| `currentEnv` | key of `buildEnv` | String | Current Build Env( ex: dev ) |
-| `prefix` | Any | Array | Log Prefix Keyword <br><b>Reserved Key</b> <br>`_ENV_`: `currentEnv`<br>`_TIME_`: now Time(TZ) |
-|`console`|['log', 'info', 'warn', 'error', 'dir', 'table']| Array | Define the console logs you will use in your project |
-| `buildEnv` | {`key`: Boolean or Array } | Object | Console settings to use by project environment <br> `false`: Can't not used <br>`true`: Use all types set in `console` <br> `Array`: Use only the set type. |
+| Key | Value | Type | Default | Description |
+| --- |:---:|:---:|:---:|---|
+| `currentEnv` | key of `buildEnv` | String | local | Current Build Env( ex: dev ) |
+| `prefix` | Any | Array | ['_ENV_'] | Log Prefix Keyword <br><b>Reserved Key</b> <br>`_ENV_`: `currentEnv`<br>`_TIME_`: Now Time(TZ) |
+|`console`| Console type | Array | ['log', 'info', 'debug', 'warn', 'error'] | Define the console logs you will use in your project |
+| `buildEnv` | {`key`: Boolean or Array } | Object | {local: true} | Console settings to use by project environment <br> `false`: Can't not used <br>`true`: Use all types set in `console` <br> `Array`: Use only the set type. |
 
 ## TODO
 - [ ] using in vuex  
