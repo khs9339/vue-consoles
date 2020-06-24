@@ -1,5 +1,5 @@
 # Vue Consoles 
->Vue 기반의 Window Console Log Plugin 
+>Window Console Log Plugin For Vue Based
 
 ## Install 
 ```shell
@@ -49,6 +49,10 @@ export default {
 |`console`| Console type | Array | ['log', 'info', 'debug', 'warn', 'error'] | Define the console logs you will use in your project |
 | `buildEnv` | {`key`: Boolean or Array } | Object | {local: true} | Console settings to use by project environment <br> `false`: Can't not used <br>`true`: Use all types set in `console` <br> `Array`: Use only the set type. |
 
+## Issue or Bug
+ - [Creating an issue](https://github.com/khs9339/vue-consoles/issues)
+ 
 ## TODO
 - [ ] using in vuex  
+- [ ] using in typescript base
 - [ ] History Cashe
