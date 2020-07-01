@@ -7,6 +7,11 @@ npm i -s vue-consoles
 yarn add vue-consoles 
 ```
 
+## Test
+```shell
+npm run test
+```
+
 ## Usage
 ### - Settings
 ```js
