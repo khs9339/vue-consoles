@@ -1,6 +1,6 @@
 {
   "name": "vue-consoles",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "console log system for Vue Based on Window.console",
   "main": "./dist/index.js",
   "scripts": {
