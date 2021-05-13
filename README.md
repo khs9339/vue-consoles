@@ -61,3 +61,4 @@ export default {
 - [ ] using in vuex  
 - [ ] using in typescript base
 - [ ] History Cashe
+- [ ] Vue3 CompositionAPI
